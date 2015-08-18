@@ -6,13 +6,8 @@ Dependencies:
 
 Run this by:
 
-    sudo docker run -p 8000:8000 --dns=208.67.222.222 simonbiggs/jupyter
+    sudo docker run -i -t -p 8000:8888 -v /home/jupyterhub:/notebooks -e "PASSWORD=yourpassword" px4tools
 
 Open browser and go to:
 
     http://localhost:8000
-
-Default user is:
-
- * Username: `admin`
- * Password: `admin`
